@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="bingo.game.BingoController" stylesheets="/bingo/res/style.css">
+    <VBox AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20"
+          spacing="10">
+        <HBox>
+            <Button fx:id="backToMainMenuButton" onMouseClicked="#handleButton" text="Back to menu"></Button>
+        </HBox>
+        <GridPane fx:id="gridPane" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+        </GridPane>
+        <Text fx:id="informationText"/>
+    </VBox>
+    <Text fx:id="bingoText" text="BINGO" rotate="-40" AnchorPane.bottomAnchor="250" AnchorPane.rightAnchor="250"
+          AnchorPane.leftAnchor="250" AnchorPane.topAnchor="250"/>
+
+</AnchorPane>
