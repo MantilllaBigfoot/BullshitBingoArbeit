@@ -50,7 +50,7 @@ public class BingoController {
 
     @FXML
     private void handleButton() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/bingo/game/MainMenu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/bingo/game/mainMenu.fxml"));
         Parent parent = loader.load();
         Main.mainStage.setScene(new Scene(parent));
         Main.mainStage.show();
